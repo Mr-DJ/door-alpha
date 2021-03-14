@@ -134,7 +134,7 @@ class _EditProductScreenState extends State<EditProductScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Edit Request'),
+        title: Text('Your Request'),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.save),
@@ -177,7 +177,7 @@ class _EditProductScreenState extends State<EditProductScreen> {
                     ),
                     TextFormField(
                       initialValue: _initValues['price'],
-                      decoration: InputDecoration(labelText: 'Quantity'),
+                      decoration: InputDecoration(labelText: 'Price'),
                       textInputAction: TextInputAction.next,
                       keyboardType: TextInputType.number,
                       focusNode: _priceFocusNode,
@@ -187,7 +187,7 @@ class _EditProductScreenState extends State<EditProductScreen> {
                       },
                       validator: (value) {
                         if (value.isEmpty) {
-                          return 'Please enter a quantity.';
+                          return 'Please enter the price.';
                         }
                         if (double.tryParse(value) == null) {
                           return 'Please enter a valid number.';
@@ -217,9 +217,9 @@ class _EditProductScreenState extends State<EditProductScreen> {
                         if (value.isEmpty) {
                           return 'Please enter a description.';
                         }
-                        //if (value.length < 10) {
-                        //return 'Should be at least 10 characters long.';
-                        //}
+                        if (value.length < 10) {
+                          return 'Should be at least 10 characters long.';
+                        }
                         return null;
                       },
                       onSaved: (value) {

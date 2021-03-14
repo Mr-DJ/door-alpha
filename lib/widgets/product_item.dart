@@ -37,17 +37,17 @@ class ProductItem extends StatelessWidget {
           backgroundColor: Colors.black87,
           leading: Consumer<Product>(
             builder: (ctx, product, _) => IconButton(
-                  icon: Icon(
-                    product.isFavorite ? Icons.favorite : Icons.favorite_border,
-                  ),
-                  color: Theme.of(context).accentColor,
-                  onPressed: () {
-                    product.toggleFavoriteStatus(
-                      authData.token,
-                      authData.userId,
-                    );
-                  },
-                ),
+              icon: Icon(
+                product.isFavorite ? Icons.favorite : Icons.favorite_border,
+              ),
+              color: Theme.of(context).accentColor,
+              onPressed: () {
+                product.toggleFavoriteStatus(
+                  authData.token,
+                  authData.userId,
+                );
+              },
+            ),
           ),
           title: Text(
             product.title,
@@ -63,7 +63,7 @@ class ProductItem extends StatelessWidget {
               Scaffold.of(context).showSnackBar(
                 SnackBar(
                   content: Text(
-                    'Added item to cart!',
+                    'Added request to cart!',
                   ),
                   duration: Duration(seconds: 2),
                   action: SnackBarAction(

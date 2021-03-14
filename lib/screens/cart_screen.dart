@@ -13,7 +13,7 @@ class CartScreen extends StatelessWidget {
     final cart = Provider.of<Cart>(context);
     return Scaffold(
       appBar: AppBar(
-        title: Text('Your Requests'),
+        title: Text('Your Cart'),
       ),
       body: Column(
         children: <Widget>[
@@ -80,7 +80,7 @@ class _OrderButtonState extends State<OrderButton> {
   @override
   Widget build(BuildContext context) {
     return FlatButton(
-      child: _isLoading ? CircularProgressIndicator() : Text('REQUEST NOW'),
+      child: _isLoading ? CircularProgressIndicator() : Text('FULFILL NOW'),
       onPressed: (widget.cart.totalAmount <= 0 || _isLoading)
           ? null
           : () async {
