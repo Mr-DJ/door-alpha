@@ -24,8 +24,8 @@ class AuthScreen extends StatelessWidget {
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 colors: [
-                  Color.fromRGBO(125, 128, 128, 1).withOpacity(0.5),
-                  Color.fromRGBO(0, 0, 0, 1).withOpacity(0.9),
+                  Color.fromRGBO(155, 246, 255, 1).withOpacity(0.5),
+                  Color.fromRGBO(189, 178, 255, 1).withOpacity(0.9),
                 ],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
@@ -46,26 +46,26 @@ class AuthScreen extends StatelessWidget {
                       margin: EdgeInsets.only(bottom: 20.0),
                       padding:
                           EdgeInsets.symmetric(vertical: 8.0, horizontal: 94.0),
-                      //transform: Matrix4.rotationZ(-8 * pi / 180)
-                      // ..translate(-10.0),
+                      // transform: Matrix4.rotationZ(-8 * pi / 180)
+                      //   ..translate(-10.0),
                       // ..translate(-10.0),
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(200),
-                        color: Colors.deepPurple.shade800,
+                        borderRadius: BorderRadius.circular(20),
+                        color: Color.fromRGBO(2, 62, 138, 1),
                         boxShadow: [
                           BoxShadow(
                             blurRadius: 8,
-                            color: Colors.black26,
-                            offset: Offset(0, 2),
+                            color: Colors.black12,
+                            offset: Offset(0, 1),
                           )
                         ],
                       ),
                       child: Text(
-                        'D.O.O.R',
+                        'DOOR',
                         style: TextStyle(
                           color: Theme.of(context).accentTextTheme.title.color,
                           fontSize: 50,
-                          fontFamily: 'Arial',
+                          fontFamily: 'Anton',
                           fontWeight: FontWeight.normal,
                         ),
                       ),

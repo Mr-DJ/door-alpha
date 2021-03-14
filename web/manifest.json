@@ -1,6 +1,6 @@
 {
-    "name": "doorfront",
-    "short_name": "doorfront",
+    "name": "auth_test",
+    "short_name": "auth_test",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

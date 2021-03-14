@@ -18,7 +18,7 @@ class AppDrawer extends StatelessWidget {
           Divider(),
           ListTile(
             leading: Icon(Icons.shop),
-            title: Text('Home'),
+            title: Text('Overview'),
             onTap: () {
               Navigator.of(context).pushReplacementNamed('/');
             },
@@ -26,7 +26,7 @@ class AppDrawer extends StatelessWidget {
           Divider(),
           ListTile(
             leading: Icon(Icons.payment),
-            title: Text('Requests'),
+            title: Text('Your Donations'),
             onTap: () {
               Navigator.of(context)
                   .pushReplacementNamed(OrdersScreen.routeName);

@@ -46,12 +46,13 @@ class MyApp extends StatelessWidget {
       ],
       child: Consumer<Auth>(
         builder: (ctx, auth, _) => MaterialApp(
-          title: 'HOME',
+          title: 'DOOR',
           theme: ThemeData(
             primarySwatch: Colors.blue,
-            accentColor: Colors.deepPurple.shade800,
+            accentColor: Colors.pink,
             fontFamily: 'Lato',
           ),
+          // theme: ThemeData.dark(),
           home: auth.isAuth
               ? ProductsOverviewScreen()
               : FutureBuilder(
